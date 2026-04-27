@@ -51,9 +51,11 @@ WITH CHECK OPTION;
 
 SELECT * FROM experienced_learners_view;
 
+
+-- check option failed 
 UPDATE experienced_learners_view
 SET LearnerCompany = 'Microsoft',
-    YearsOfExperience = 5
+    YearsOfExperience = 2
 WHERE Learner_Id = 1;
 
 SELECT * FROM experienced_learners_view WHERE Learner_Id = 1;

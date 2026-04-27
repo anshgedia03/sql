@@ -1,6 +1,6 @@
 USE TECH_COM;
 
--- Check existing indexes on the learners table.
+
 SHOW INDEX FROM learners;
 
 CREATE INDEX idx_learners_location
@@ -16,7 +16,7 @@ FROM learners
 WHERE Location = 'Pune';
 
 
---composite index for multiple cols
+
 CREATE INDEX idx_learners_course_source
 ON learners(SelectedCourses, SourceOfJoining);
 

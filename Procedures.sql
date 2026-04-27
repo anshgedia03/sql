@@ -13,7 +13,7 @@ SELECT
     Locations
 FROM emp;
 
--- Procedure using an IN parameter.
+
 CREATE PROCEDURE get_employees_by_location(IN p_location VARCHAR(25))
 SELECT
     EmpID,

@@ -23,7 +23,6 @@ FROM products
 WHERE MATCH(description)
 AGAINST('phone' IN NATURAL LANGUAGE MODE);
 
--- This searches inside both product name and description.
 SELECT *
 FROM products
 WHERE MATCH(name, description)

@@ -43,7 +43,7 @@ SELECT * FROM budget;
 
 
 UPDATE emp
-SET salary = 3000000
+SET salary = 600000
 WHERE Fname = 'test'
   AND Lname = 'employee';
 
