@@ -7,6 +7,9 @@ CREATE INDEX idx_learners_location
 ON learners(Location);
 
 
+SELECT * FROM learners WHERE Location = 'Pune';
+
+
 SELECT
     Learner_Id,
     LearnerFirstName,
